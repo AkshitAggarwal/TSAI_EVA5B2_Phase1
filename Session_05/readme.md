@@ -17,8 +17,8 @@ To create a simple model architecture under 20k parameters with no data augmenta
 ### Results:
 Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accuracy: 98.99
 ### Analysis:
--Train and test accuracies are quite close. Model was underfitting most of the time while training except at the last. 
--Still to make the model architecture less paramater heavy. 
+-  Train and test accuracies are quite close. Model was underfitting most of the time while training except at the last. 
+-  Still to make the model architecture less paramater heavy. 
 
 ===================================================================================================
 
@@ -29,9 +29,9 @@ To make a model will less than 10k parameters.
 ### Results:
 Total parameters: 9,032 |  Maximum Train Accuracy: 98.98 |  Maximum Test Accuracy: 98.85
 ### Analysis:
--Train and test accuracies are very close. 
--Model is finally overfitting. Which means I can apply regularization. 
--Model parameters are reduced under 10k, still model performs equally well. 
+-  Train and test accuracies are very close. 
+-  Model is finally overfitting. Which means I can apply regularization. 
+-  Model parameters are reduced under 10k, still model performs equally well. 
 
 ===================================================================================================
 
@@ -43,10 +43,10 @@ Add regularization to model(Batch Normalization and Dropout).
 ### Results:
 Total parameters: 9,192 |  Maximum Train Accuracy: 99.19 |  Maximum Test Accuracy: 99.29
 ### Analysis:
--Without applying droupt the train/test accuracies were: 99.61/99.37
--After applying batch normalization(Without dropout) the accuracy increased and the model was consistently overfitting by 0.2-0.3%
--Accuracy slightly decreased after adding dropout but it solved the problem of overfitting. The model after adding dropout overfits by 0.07-0.08%
--It looks like this is the best this model can do under 20 epochs and to increase the accuracy other measures needs to be taken. 
+-  Without applying droupt the train/test accuracies were: 99.61/99.37
+-  After applying batch normalization(Without dropout) the accuracy increased and the model was consistently overfitting by 0.2-0.3%
+-  Accuracy slightly decreased after adding dropout but it solved the problem of overfitting. The model after adding dropout overfits by 0.07-0.08%
+-  It looks like this is the best this model can do under 20 epochs and to increase the accuracy other measures needs to be taken. 
 
 ===================================================================================================
 
@@ -58,8 +58,8 @@ Experiment with Image Augmentations and Learning Rates.
 ### Results:
 Total parameters: 9,752 |  Maximum Train Accuracy: 98.86 |  Maximum Test Accuracy: 99.39
 ### Analysis:
--Adding image augmentation increased testing accuracy slightly. 
--LR Schedular did the real trick, with a weight decay of 0.75 times after 3 steps. 
--Loss was going down steadily and model can perform even better after training for a few more epochs. 
+-  Adding image augmentation increased testing accuracy slightly. 
+-  LR Schedular did the real trick, with a weight decay of 0.75 times after 3 steps. 
+-  Loss was going down steadily and model can perform even better after training for a few more epochs. 
 
 ===================================================================================================
