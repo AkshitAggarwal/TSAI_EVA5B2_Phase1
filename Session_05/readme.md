@@ -12,20 +12,26 @@ The aim of this assignment is to go through similar steps as taken in the lesson
 
 ## Experiment 1
 
-### Target: 
+### Target:
+To create a simple model architecture under 20k parameters with no data augmentation or regularization. 
 ### Results:
+Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accuracy: 98.99
 ### Analysis:
+-Train and test accuracies are quite close. Model was underfitting most of the time while training except at the last. 
+-Still to make the model architecture less paramater heavy. 
 
-=======================================================================================================
+===================================================================================================
 
 ## Experiment 2
 
 ### Target: 
+To make a model will less than 10k parameters.
 ### Results:
+Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accuracy: 98.99
 ### Analysis:
 
 
-=======================================================================================================
+===================================================================================================
 
 
 ## Experiment 3
@@ -35,7 +41,7 @@ The aim of this assignment is to go through similar steps as taken in the lesson
 ### Analysis:
 
 
-=======================================================================================================
+===================================================================================================
 
 
 ## Experiment 4
@@ -45,4 +51,4 @@ The aim of this assignment is to go through similar steps as taken in the lesson
 ### Analysis:
 
 
-=======================================================================================================
+===================================================================================================
