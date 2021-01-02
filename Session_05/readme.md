@@ -27,9 +27,11 @@ Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accura
 ### Target: 
 To make a model will less than 10k parameters.
 ### Results:
-Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accuracy: 98.99
+Total parameters: 9,032 |  Maximum Train Accuracy: 98.98 |  Maximum Test Accuracy: 98.85
 ### Analysis:
-
+-Train and test accuracies are very close. 
+-Model is finally overfitting. Which means I can apply regularization. 
+-Model parameters are reduced under 10k, still model performs equally well. 
 
 ===================================================================================================
 
@@ -37,7 +39,9 @@ Total parameters: 19,552 |  Maximum Train Accuracy: 99.07 |  Maximum Test Accura
 ## Experiment 3
 
 ### Target: 
+Add regularization to model. 
 ### Results:
+Total parameters:  |  Maximum Train Accuracy:  |  Maximum Test Accuracy: 
 ### Analysis:
 
 
