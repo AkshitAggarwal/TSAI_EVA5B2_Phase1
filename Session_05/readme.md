@@ -56,8 +56,10 @@ Total parameters: 9,192 |  Maximum Train Accuracy: 99.19 |  Maximum Test Accurac
 ### Target: 
 Experiment with Image Augmentations and Learning Rates. 
 ### Results:
-Total parameters: 9,192 |  Maximum Train Accuracy:  |  Maximum Test Accuracy: 
+Total parameters: 9,752 |  Maximum Train Accuracy: 98.86 |  Maximum Test Accuracy: 99.39
 ### Analysis:
-
+-Adding image augmentation increased testing accuracy slightly. 
+-LR Schedular did the real trick, with a weight decay of 0.75 times after 3 steps. 
+-Loss was going down steadily and model can perform even better after training for a few more epochs. 
 
 ===================================================================================================
