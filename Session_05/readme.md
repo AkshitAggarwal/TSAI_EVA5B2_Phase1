@@ -39,11 +39,14 @@ Total parameters: 9,032 |  Maximum Train Accuracy: 98.98 |  Maximum Test Accurac
 ## Experiment 3
 
 ### Target: 
-Add regularization to model. 
+Add regularization to model(Batch Normalization and Dropout). 
 ### Results:
-Total parameters:  |  Maximum Train Accuracy:  |  Maximum Test Accuracy: 
+Total parameters: 9,192 |  Maximum Train Accuracy: 99.19 |  Maximum Test Accuracy: 99.29
 ### Analysis:
-
+-Without applying droupt the train/test accuracies were: 99.61/99.37
+-After applying batch normalization(Without dropout) the accuracy increased and the model was consistently overfitting by 0.2-0.3%
+-Accuracy slightly decreased after adding dropout but it solved the problem of overfitting. The model after adding dropout overfits by 0.07-0.08%
+-It looks like this is the best this model can do under 20 epochs and to increase the accuracy other measures needs to be taken. 
 
 ===================================================================================================
 
@@ -51,7 +54,9 @@ Total parameters:  |  Maximum Train Accuracy:  |  Maximum Test Accuracy:
 ## Experiment 4
 
 ### Target: 
+Experiment with Image Augmentations and Learning Rates. 
 ### Results:
+Total parameters: 9,192 |  Maximum Train Accuracy:  |  Maximum Test Accuracy: 
 ### Analysis:
 
 
