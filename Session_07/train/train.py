@@ -63,7 +63,7 @@ def test(model, device, test_loader):
     test_acc.append(100. * correct / len(test_loader.dataset))
     return test_loss, 100. * correct / len(test_loader.dataset), misclassified
 
-def train_test_model(model,device, train_loader, test_loader, epochs = 25):
+def train_test_model(model, device, train_loader, test_loader, epochs):
     optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9, weight_decay=5e-4)
     #Learning Rate schedular to adjust the LR based on model performance during training
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, verbose=True, patience=1)
