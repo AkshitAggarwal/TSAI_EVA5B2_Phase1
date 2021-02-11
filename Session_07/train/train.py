@@ -69,7 +69,7 @@ def train_test_model(model, epochs = 25):
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, verbose=True, patience=1)
     epoch_accuracies = []
     epoch_losses = []
-    for epoch in range(EPOCHS):
+    for epoch in range(epochs):
         print("EPOCH:", epoch)
         print('Learning rate: ', optimizer.param_groups[0]['lr'])
         train(model, device, train_loader, optimizer, epoch)
